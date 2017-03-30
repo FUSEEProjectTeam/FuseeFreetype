@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="FUSEEAlterations">
+	<FreetypeRoot>..\..\freetype-2.6.2\</FreetypeRoot>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{8d7ef914-87a2-475c-886f-241d61fd9dfc}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(FreetypeRoot)src\autofit\autofit.c" />
+    <ClCompile Include="$(FreetypeRoot)src\bdf\bdf.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\cff\cff.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\base\ftbase.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\base\ftbitmap.c" />
+    <ClCompile Include="$(FreetypeRoot)src\cache\ftcache.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\base\ftfstype.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftgasp.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftglyph.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\gzip\ftgzip.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\base\ftinit.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\lzw\ftlzw.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\base\ftstroke.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftsystem.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\smooth\smooth.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\base\ftbbox.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftfntfmt.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftmm.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\base\ftpfr.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftsynth.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\fttype1.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftwinfnt.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftlcdfil.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftgxval.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftotval.c" />
+    <ClCompile Include="$(FreetypeRoot)src\base\ftpatent.c" />
+    <ClCompile Include="$(FreetypeRoot)src\pcf\pcf.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\pfr\pfr.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\psaux\psaux.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\pshinter\pshinter.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\psnames\psmodule.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\raster\raster.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\sfnt\sfnt.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\truetype\truetype.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\type1\type1.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\cid\type1cid.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\type42\type42.c"/>
+    <ClCompile Include="$(FreetypeRoot)src\winfonts\winfnt.c"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(FreetypeRoot)include\ft2build.h" />
+    <ClInclude Include="$(FreetypeRoot)include\freetype\config\ftconfig.h" />
+    <ClInclude Include="$(FreetypeRoot)include\freetype\config\ftheader.h" />
+    <ClInclude Include="$(FreetypeRoot)include\freetype\config\ftmodule.h" />
+    <ClInclude Include="$(FreetypeRoot)include\freetype\config\ftoption.h" />
+    <ClInclude Include="$(FreetypeRoot)include\freetype\config\ftstdlib.h" />
+  </ItemGroup>
+</Project>
